@@ -25,7 +25,7 @@ SECRET_KEY = 'u47_0s)sxqru9ol^uczn13ztcs#whosx+df#%7x!7zc*3e02#$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['count-my-steps.herokuapp.com','127.0.0.1:8000']
 
 
 # Application definition
