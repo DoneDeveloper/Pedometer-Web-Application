@@ -1,0 +1,1 @@
+web: Pedometer.wsgi --log-file -
