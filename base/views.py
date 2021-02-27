@@ -58,6 +58,9 @@ def home(request):
 
     myFilter = DayRangeFilter(request.GET, queryset=days)
     days = myFilter.qs
+    for day in days:
+        total_steps += day.steps_counter
+    total_days = days.count()
 
     for day in days:
         total_steps += day.steps_counter
@@ -65,6 +68,7 @@ def home(request):
     context = {'myFilter': myFilter, 'days': days, 'total_days': total_days,
                'total_steps': total_steps}
     return render(request, 'dashboard.html', context)
+
 
 
 def logoutUser(request):
