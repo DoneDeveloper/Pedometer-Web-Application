@@ -1,1 +1,1 @@
-web: Pedometer.wsgi --log-file -
+web: gunicorn Pedometer.wsgi --log-file -
